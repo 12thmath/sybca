@@ -1,0 +1,77 @@
+<html>
+<head>
+<title> programe - 10 </title>
+</head>
+<body>
+<font size=4>
+Programe - 10.write a programe c programe to read n number of student information like 
+rollnumber, name and marks of 3 subjects <br>
+using array of structure and array within structure print the total and percentage with whole data.
+<br><br>
+
+struct student<br>
+{<br>
+int sno;<br>
+char snm[20];<br>
+int m[3];<br>
+}s[50];<br><br>
+void main()<br>
+{<br>
+int i,n,j,tot=0;<br>
+float per;<br><br>
+
+printf("\n enter the no of student");<br>
+scanf("%d",&n);<br><br>
+for(i=0;i<n;i++)<br>
+{<br>
+tot=0;<br>
+printf("\n enter the student no:");<br>
+scanf("%d",&s[i].sno);<br>
+printf("enter student name:");<br>
+
+gets(s[i].snm);<br>
+
+for(j=0;j<3;j++)<br>
+{<br>
+printf("enter the marks of sub[%d]=",j+1);<br>
+scanf("%d",&s[i].m[j]);<br>
+tot=tot+s[i].m[j]);<br>
+
+per=tot/3.0;<br>
+}<br><br>
+for(i=0;i<n;i++)<br>
+{<br>
+printf("\n sno=%d",s[i].sno);<br>
+printf("\n sname=%s",s[i].snm);<br>
+for(j=0;j<3;j++)<br>
+{<br>
+printf("\n marks of sub[%d]=%d",j+1,s[i].m[j]);<br>
+}<br>
+printf("\n total=%d",tot);<br>
+printf("\n percentage=%.2f",per);<br>
+}<br>
+}<br><br>
+<a link href=p2-1.html><input type=button value="P - 1"></a>
+<a link href=p2-2.html><input type=button value="P - 2"></a>
+<a link href=p2-3.html><input type=button value="P - 3"></a>
+<a link href=p2-4.html><input type=button value="P - 4"></a>
+<a link href=p2-5.html><input type=button value="P - 5"></a>
+<a link href=p2-6.html><input type=button value="P - 6"></a>
+<a link href=p2-7.html><input type=button value="P - 7"></a><br>
+<a link href=p2-8.html><input type=button value="P - 8"></a>
+<a link href=p2-9.html><input type=button value="P - 9"></a>
+<a link href=p2-10.html><input type=button value="P - 10"></a>
+<a link href=p2-11.html><input type=button value="P - 11"></a>
+<a link href=p2-12.html><input type=button value="P - 12"></a>
+<a link href=p2-13.html><input type=button value="P - 13"></a>
+<a link href=p2-14.html><input type=button value="P - 14"></a><br>
+<a link href=p2-15.html><input type=button value="P - 15"></a>
+<a link href=p2-16.html><input type=button value="P - 16"></a>
+<a link href=p2-17.html><input type=button value="P - 17"></a>
+<a link href=p2-18.html><input type=button value="P - 18"></a>
+<a link href=p2-19.html><input type=button value="P - 19"></a>
+<a link href=p2-20.html><input type=button value="P - 20"></a>
+<a link href=p2-21.html><input type=button value="P - 21"></a><br>
+</font>
+</body>
+</html>

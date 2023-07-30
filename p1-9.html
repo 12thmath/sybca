@@ -1,0 +1,122 @@
+<html>
+<head>
+<title> programe 9 </title>
+
+</head>
+<body>
+<font size=4>
+Programe - 9.write a programe to read employee no, emploee code, emploee name, basic salary and lic.<br>
+calculate da, hra, ma, pf, it and pt according to following criteria:-<br><br>
+void main()<br>
+{<br>
+int eno,code;<br>
+char name[20];<br>
+float basic,da,hra,ma,pf,lic,pt,totded,gsal,netsal,it;<br><br>
+
+printf("\n enter employee number:");<br>
+scanf("%d",&eno);<br>
+printf("\n enter employee code:");<br>
+scanf("%d",&code);<br>
+printf("\n enter employee name:");<br>
+
+gets(name);<br>
+printf("\n enter basic salary:");<br>
+scanf("%f",&basic);<br>
+printf("\n enter lic amount:");<br>
+scanf("%f",&lic);<br><br>
+//da and pf calculation<br>
+if(basic<=5000)<br>
+{<br>
+da=basic*0.20;<br>
+pf=basic*0.08;<br>
+}<br>
+else if(basic<=9000)<br>
+{<br>
+da=basic*0.30;<br>
+pf=basic*0.12;<br>
+}<br>
+else if(basic<=15000)<br>
+{<br>
+da=basic*0.40;<br>
+pf=basic*0.20;<br>
+}<br>
+else<br>
+{<br>
+da=basic*0.50;<br>
+pf=basic*0.25;<br>
+}<br><br>
+//hra calculation<br>
+switch(code)<br>
+{<br>
+case 1:<br>
+hra=120;<br>
+break;<br>
+case 2:<br>
+hra=250;<br>
+break;<br>
+case 3:<br>
+hra=400;<br>
+break;<br>
+default:<br>
+hra=0;<br>
+}<br><br>
+//ma calculation<br>
+ma=basic*0.20;<br>
+gsal=basic+da+hra+ma;<br><br>
+//pt calculation<br>
+if(gsal<=10000)<br>
+pt=200;<br>
+else if(gsal<=20000)<br>
+pt=400;<br>
+else<br>
+pt=500;<br><br>
+//it calculation<br>
+it=gsal*0.10;<br>
+totded=pf+it+pt+lic;<br>
+netsal=gsal-totded;<br><br>
+if(code>=0&&code<=3)<br>
+{<br>
+printf("\n\t\t employee payslip");<br>
+printf("\n=================================================================");<br>
+printf("\n employee code=%d\t\temployee name:%s",code,name);<br>
+printf("\n=================================================================");<br>
+printf("\n earings\tamount\t\tdeduction\tamount");<br>
+printf("\n=================================================================");<br>
+printf("\n basic\t\t%7.2f\t\tpt\t\t%7.2f",basic,pf);<br>
+printf("\n da\t\t%7.2f\t\tlic\t\t%7.2f",da,lic);<br>
+printf("\n hra\t\t%7.2f\t\tit\t\t%7.2f",hra,it);<br>
+printf("\n ma\t\t%7.2f\t\tpt\t\t%7.2f",ma,pt);<br>
+printf("\n=================================================================");<br>
+printf("\n gross\t\t%7.2f\t\ttotal deduction\t%7.2f",gsal,totded);<br>
+printf("\n\t\t\t\t\t net amount%7.2f",netsal);<br>
+}<br>
+else<br>
+{<br>
+printf("invalid code");<br>
+}<br>
+}<br><br>
+
+<a link href=p1-1.html><input type=button value="P - 1"></a>
+<a link href=p1-2.html><input type=button value="P - 2"></a>
+<a link href=p1-3.html><input type=button value="P - 3"></a>
+<a link href=p1-4.html><input type=button value="P - 4"></a>
+<a link href=p1-5.html><input type=button value="P - 5"></a>
+<a link href=p1-6.html><input type=button value="P - 6"></a>
+<a link href=p1-7.html><input type=button value="P - 7"></a><br>
+<a link href=p1-8.html><input type=button value="P - 8"></a>
+<a link href=p1-9.html><input type=button value="P - 9"></a>
+<a link href=p1-10.html><input type=button value="P - 10"></a>
+<a link href=p1-11.html><input type=button value="P - 11"></a>
+<a link href=p1-12.html><input type=button value="P - 12"></a>
+<a link href=p1-13.html><input type=button value="P - 13"></a>
+<a link href=p1-14.html><input type=button value="P - 14"></a><br>
+<a link href=p1-15.html><input type=button value="P - 15"></a>
+<a link href=p1-16.html><input type=button value="P - 16"></a>
+<a link href=p1-17.html><input type=button value="P - 17"></a>
+<a link href=p1-18.html><input type=button value="P - 18"></a>
+<a link href=p1-19.html><input type=button value="P - 19"></a>
+<a link href=p1-20.html><input type=button value="P - 20"></a>
+<a link href=p1-21.html><input type=button value="P - 21"></a><br>
+</font>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<html>
+<head>
+<title> programe 11 </title>
+
+</head>
+<body>
+<font size=4>
+Programe - 11.write a programe to read an integer number and find out the total number of an odd value digit<br>
+and even value digit and also print the sum of all odd value digits and sum of even value digits.<br><br>
+void main()<br>
+{<br>
+int n,dgt,oddcnt=0,oddsum=0,evencnt=0,evensum=0;<br><br>
+printf("enter the value of n:");<br>
+scanf("%d",&n);<br><br>
+while(n>0)<br>
+{<br>
+dgt=n%10;<br>
+n=n/10;<br>
+if(dgt%2==0)<br>
+{<br>
+evencnt=evencnt+1;<br>
+evensum=evensum+dgt;<br>
+}<br>
+else<br>
+{<br>
+oddcnt++;<br>
+oddsum+=dgt;<br>
+}<br>
+}<br><br>
+printf("\n no of odd digts are %d.",oddcnt);<br>
+printf("\n no of even digts are %d.",evencnt);<br>
+printf("\n sum of odd digts is %d.",oddsum);<br>
+printf("\n sum of even digts is %d.",evensum);<br>
+}<br><br>
+
+<a link href=p1-1.html><input type=button value="P - 1"></a>
+<a link href=p1-2.html><input type=button value="P - 2"></a>
+<a link href=p1-3.html><input type=button value="P - 3"></a>
+<a link href=p1-4.html><input type=button value="P - 4"></a>
+<a link href=p1-5.html><input type=button value="P - 5"></a>
+<a link href=p1-6.html><input type=button value="P - 6"></a>
+<a link href=p1-7.html><input type=button value="P - 7"></a><br>
+<a link href=p1-8.html><input type=button value="P - 8"></a>
+<a link href=p1-9.html><input type=button value="P - 9"></a>
+<a link href=p1-10.html><input type=button value="P - 10"></a>
+<a link href=p1-11.html><input type=button value="P - 11"></a>
+<a link href=p1-12.html><input type=button value="P - 12"></a>
+<a link href=p1-13.html><input type=button value="P - 13"></a>
+<a link href=p1-14.html><input type=button value="P - 14"></a><br>
+<a link href=p1-15.html><input type=button value="P - 15"></a>
+<a link href=p1-16.html><input type=button value="P - 16"></a>
+<a link href=p1-17.html><input type=button value="P - 17"></a>
+<a link href=p1-18.html><input type=button value="P - 18"></a>
+<a link href=p1-19.html><input type=button value="P - 19"></a>
+<a link href=p1-20.html><input type=button value="P - 20"></a>
+<a link href=p1-21.html><input type=button value="P - 21"></a><br>
+</font>
+</body>
+</html>

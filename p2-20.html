@@ -1,0 +1,75 @@
+<html>
+<head>
+<title> programe - 20 </title>
+</head>
+<body>
+<font size=4>
+Programe - 20.write a programe to find total numbers of uppercase letters,lowercase letters, blank space and special charater from the given file.<br><br>
+void main()<br>
+{<br>
+char fname[100],ch;<br>
+int c=0,s=0,d=0,b=0,sp=0;<br>
+FILE *f;<br><br>
+
+printf("enter file name==");<br>
+gets(fname);<br><br>
+
+fopen=(fname,"r");<br><br>
+
+if(f==null)<br>
+printf("file is not present");<br>
+else<br>
+{<br>
+printf("\n file exist");<br>
+printf("\n file content.....");<br>
+printf("\n\n");<br>
+while((ch=getc(f))!=EOF)<br>
+{<br>
+printf("%c",ch);<br>
+if(ch!='\n')<br>
+{<br>
+if(ch>=65&&ch<=90)<br>
+c++;<br>
+else if(ch>='a'&&ch<='z')<br>
+s++;<br>
+else if(ch>='0'&&<='9')<br>
+d++;<br>
+else if(ch==32)<br>
+b++;<br>
+else<br>
+sp++;<br>
+}<br>
+}<br>
+}<br><br>
+printf("\n total no of uppercase character=%d",c);<br>
+printf("\n total no of lowercase character=%d",s);<br>
+printf("\n total no of digit=%d",d);<br>
+printf("\n total no of blank space=%d",b);<br>
+printf("\n total no of special character=%d",sp);<br><br>
+
+fclose(f);<br>
+}<br><br>
+<a link href=p2-1.html><input type=button value="P - 1"></a>
+<a link href=p2-2.html><input type=button value="P - 2"></a>
+<a link href=p2-3.html><input type=button value="P - 3"></a>
+<a link href=p2-4.html><input type=button value="P - 4"></a>
+<a link href=p2-5.html><input type=button value="P - 5"></a>
+<a link href=p2-6.html><input type=button value="P - 6"></a>
+<a link href=p2-7.html><input type=button value="P - 7"></a><br>
+<a link href=p2-8.html><input type=button value="P - 8"></a>
+<a link href=p2-9.html><input type=button value="P - 9"></a>
+<a link href=p2-10.html><input type=button value="P - 10"></a>
+<a link href=p2-11.html><input type=button value="P - 11"></a>
+<a link href=p2-12.html><input type=button value="P - 12"></a>
+<a link href=p2-13.html><input type=button value="P - 13"></a>
+<a link href=p2-14.html><input type=button value="P - 14"></a><br>
+<a link href=p2-15.html><input type=button value="P - 15"></a>
+<a link href=p2-16.html><input type=button value="P - 16"></a>
+<a link href=p2-17.html><input type=button value="P - 17"></a>
+<a link href=p2-18.html><input type=button value="P - 18"></a>
+<a link href=p2-19.html><input type=button value="P - 19"></a>
+<a link href=p2-20.html><input type=button value="P - 20"></a>
+<a link href=p2-21.html><input type=button value="P - 21"></a><br>
+</font>
+</body>
+</html>
